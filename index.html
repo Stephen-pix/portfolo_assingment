@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">My Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section-container">
+            <div class="intro">
+                <!-- Replace 'profile.jpg' with your actual image file in the images folder -->
+                <img src="images/profile.jpeg" alt="My Profile Picture" id="profile-pic">
+                <h2>Hello, welcome to my page!</h2>
+                <p>I am a student passionate about building secure systems and backend architecture. My goal is to become a Security Network Engineer.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- About Me Section -->
+        <section id="about" class="section-container">
+            <h2>About Me</h2>
+            <p>I am currently pursuing my degree and constantly learning how to build and secure modern software applications. When I'm not coding, I enjoy outdoor recreation.</p>
+            
+            <h3>Educational Background</h3>
+            <table class="edu-table">
+                <tr>
+                    <th>Year</th>
+                    <th>Institution</th>
+                    <th>Program</th>
+                </tr>
+                <tr>
+                    <td>2026 - Present</td>
+                    <td>KCA University</td>
+                    <td>BSc Information Security and Forensics</td>
+                </tr>
+            </table>
+
+            <h3>My Personal Interests</h3>
+            <ul>
+                <li>Playing tabletop board games at local parks</li>
+                <li>Physical fitness and working out</li>
+                <li>Solving interactive mystery games</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-container">
+            <h2>Technical Skills</h2>
+            <p>Here are some of the technologies I have been learning and working with:</p>
+            <ol class="skills-list">
+                <li>Python (Backend Engineering)</li>
+                <li>Django & Django REST Framework</li>
+                <li>PostgreSQL Database Administration</li>
+                <li>HTML5 Layout Design</li>
+                <li>CSS Styling</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-container">
+            <h2>My Projects</h2>
+            <div class="project-flex">
+                <div class="project-card">
+                    <h3>unitiback</h3>
+                    <p>A Django-based backend application infrastructure with a live PostgreSQL database and M-Pesa STK Push payment callback integrations.</p>
+                </div>
+                <div class="project-card">
+                    <h3>DeskHive Hub</h3>
+                    <p>A command-line hub administrator module utilizing custom file I/O operations to read, update, and append text-file data streams.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Nexora College Website</h3>
+                    <p>A multi-page static website architecture for a fictional institution, built using structured HTML, tabular data, and localized image paths.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-container">
+            <h2>Contact Me</h2>
+            <p>You can reach me via email at: <a href="mailto:student@example.com">student@example.com</a></p>
+            
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit" id="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Personal Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
